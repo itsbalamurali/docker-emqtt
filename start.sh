@@ -8,7 +8,6 @@ PONG="pong"
 function check_process {
   OUTPUT="$(/opt/emqttd/bin/emqttd ping)"
   RESP="${OUTPUT}"
-  echo "$RESP"
   if [ "$RESP" != "$PONG" ];
   then exit 1000;
   fi
